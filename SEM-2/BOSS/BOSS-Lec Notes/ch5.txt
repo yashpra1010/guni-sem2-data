@@ -1,0 +1,83 @@
+======================
+           Dt: 17/04/2021
+======================
+                  Ch-5
+---------------------------------------
+---------------------------------------
+***Changing Permissions with the Symbolic Method***
+
+chmod WhoWhatWhich file/directory
+
+=> Who is u,g,o,a (for user,group,other,all)
+=> What is +,-,= (for add,remove,set exactly)
+=> Which is r,w,x (for read,write,execute)
+---------------------------------------
+---------------------------------------
+***Changing Permissions with the Numeric Method***
+
+655 - default for directory
+644 - default for file
+
+chmod ### file/directory
+         |-ugo-|
+Each digit represents permissions for an access level: user, group, other.
+The digit is calculated by adding together numbers for each permission you want to add.
+=> 4 for read
+=> 2 for write
+=> 1 for execute
+
+EXAMPLE
+
+4+2+1=7 (r+w+x)
+4+2=6 (r+w)
+4+1=5 (r+x)
+7-4-3-1=0 (No permission)
+
+chmod 644 file/directory
+
+***Changing file/directory user or group ownership***
+
+chown user_owner:group_owner file/directory
+
+---------------------------------------
+---------------------------------------
+***SPECIAL PERMISSIONS***
+
+(a) u+s (suid)
+-runs file as onwer user...not by the one who is running
+
+(b) g+s (sgid)
+-effect on file -> "file executes as the group that owns the file."
+-effect on directories -> "newly created file automatically gets group owner of the group owner of directory."
+
+(c) o+t (sticky)
+-effect on directories -> "Users with write access to the dir can only remove files that they own; they cannot remove or force saves to files owned by other users."
+
+Numeric: -
+suid = 4;
+sgid = 2;
+sticky = 1;
+
+---------------------------------------
+---------------------------------------
+UNMASK
+4-read
+2-write
+1-execute
+
+4+2+1=7
+
+777-default permission for directory
+666-default permission for file
+
+*FOR DIRECTORY*
+777-002=775
+group=rwx
+user=rwx
+others=r-x=7-2=5(4+1)
+
+*FOR FILE*
+666-002=664
+user=rw-
+group=rw-
+others=r--

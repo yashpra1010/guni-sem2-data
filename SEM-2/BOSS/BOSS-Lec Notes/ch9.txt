@@ -1,0 +1,28 @@
+======================
+           Dt: 02/06/2021
+======================
+                 Ch-9
+-------------------------------------
+
+systemd-journald is a service and journalctl is a command to retreive the logs in linux system.
+
+➡ journalctl -f : shows last 10 logs only.
+
+➡ journalctl -n "number" : shows n number of logs only.
+
+➡ journalctl --since : to check log of today.
+
+➡ journalctl --since "yyyy-mm-dd HH:MM:SS" --until "yyyy-mm-dd HH:MM:SS" : to see log of particular date and time.
+
+➡ journalctl --since "-1 hour"
+
+➡cd /etc/rsyslog.d/ ; ls
+
+➡in etc -> cat /etc/rsyslog.conf
+
+1. Create .conf file in /etc/rsyslog.d directory.
+2. Write a type of log and location in .conf file with the reference of /etc/rsyslog.conf file.
+3. save your .conf file.\
+4. restart service rsyslog.
+5. develop manual log using logger command.
+6. check your log as per the mentioned location in .conf file.

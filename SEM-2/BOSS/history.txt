@@ -1,0 +1,486 @@
+1  sudo -i
+    2  gcc
+    3  sudo yum group install "Development Tools"
+    4  gcc --version
+    5  gcc test.c -o test
+    6  ./test
+    7  clear
+    8  gcc test.c -o test
+    9  ./test
+   10  clear
+   11  sudo dhclient -v
+   12  sudo dnf install dnf-plugins-core
+   13  sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+   14  sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+   15  sudo dnf install brave-browser
+   16  clear
+   17  sudo dhclient -v
+   18  ipconfig
+   19  ifconfig
+   20  sudo dhclient -v
+   21  ifconfig
+   22  ping www.google.com
+   23  sudo dhclient -v
+   24  ifconfig
+   25  ipconfig
+   26  ping 8.8.8.8
+   27  ping 8.8.8.8 -5
+   28  ping www.google.com -c
+   29  ping www.google.com 5
+   30  ping 8.8.8.8
+   31  su -
+   32  date
+   33  clear
+   34  date +%r
+   35  man date
+   36  touch zcat
+   37  vi zcat
+   38  cat zcat
+   39  cleat
+   40  clear
+   41  ls
+   42  rm test
+   43  ls
+   44  rm test.c
+   45  ls
+   46  pwd
+   47  rm zcat
+   48  ls
+   49  ls
+   50  touch zcat
+   51  vi zcat
+   52  cat zcat
+   53  less zcat
+   54  clear
+   55  file zcat
+   56  man wc
+   57  wc zcat
+   58  log
+   59  history
+   60  head zcat
+   61  tail zcat
+   62  man wc
+   63  sudo dhclient -v
+   64  history
+   65  clear history
+   66  clear -x
+   67  tail -n 20 zcat
+   68  history
+   69  tail -n 20 zcat
+   70  date +%r
+   71  history
+   72  date +%r
+   73  ls
+   74  mkdir Yash
+   75  ls
+   76  cd Yash
+   77  touch new.text
+   78  vi new.txt
+   79  cat new.txt
+   80  ls
+   81  rm new.text
+   82  cat new.txt
+   83  less new.txt
+   84  ls
+   85  man ls
+   86  ls -c
+   87  ls -a
+   88  cd t
+   89  okay
+   90  whoami
+   91  color 02
+   92  man color
+   93  cp new.txt new1.txt
+   94  ls
+   95  cat new1.txt
+   96  man size
+   97  size
+   98  size new.txt
+   99  touch a.out
+  100  size a.out
+  101  rm a.out
+  102  ls
+  103  cat
+  104  pwd
+  105  cd yashpra1010
+  106  ls
+  107  cd ..
+  108  cp -r Yash YashCopy
+  109  ls
+  110  cd YashCopy
+  111  ls
+  112  cd ..
+  113  cd YashCopy
+  114  ls
+  115  cat new1.txt
+  116  cat new.txt
+  117  cd ..
+  118  pwd
+  119  cd home
+  120  cd yashpra1010
+  121  pwd
+  122  ls
+  123  cd Desktop
+  124  mousetweaks
+  125  cd ..
+  126  ls
+  127  cd Desktop
+  128  cd ..
+  129  ls
+  130  mv Yash BDA
+  131  ls
+  132  okay
+  133  ls
+  134  rm -r BDA
+  135  ls
+  136  rmdir YashCopy
+  137  rm YashCopy
+  138  rm -r YashCopy
+  139  ls
+  140  rht-vmctl status all
+  141  ls
+  142  cd Templates
+  143  ls
+  144  cd ..
+  145  rmdir Templates
+  146  ls
+  147  man su
+  148  mkdir mom
+  149  cd mom
+  150  mkdir dad
+  151  cd ..
+  152  ls
+  153  cd yashpra1010
+  154  rmdir mom
+  155  rm -r mom
+  156  ls
+  157  mkdir BOSS
+  158  cd BOSS
+  159  ls
+  160  touch 1.txt 2.txt 3.txt 4.txt 5.txt
+  161  ls
+  162  mkdir a
+  163  ls
+  164  rm -r sa
+  165  rm -r a
+  166  ls
+  167  touch {6..10}.txt
+  168  ls
+  169  mkdir {0-2}
+  170  ls
+  171  rm -r {0-2}
+  172  mkdir 1 2
+  173  ls
+  174  rm -r 1
+  175  rm -r 2
+  176  mkdir {1..3}
+  177  las
+  178  ls
+  179  rm -r {1..3}
+  180  ls
+  181  touch {a..z}.txt
+  182  ls
+  183  rm -r {a..z}
+  184  touch temp{1..5}
+  185  ls
+  186  rm {1..10}.txt
+  187  ls
+  188  rm {a..z}.txt
+  189  ls
+  190  rm temp{1..5}
+  191  ls
+  192  touch file{a..b}{1..2}.txt
+  193  ls
+  194  rm file{a..b}{1..2}.txt
+  195  ls
+  196  touch temp{a{1,2},b,c}.c
+  197  ls
+  198  touch temp{a{1,2},2,3}.c
+  199  ls
+  200  cd ..
+  201  rm -r BOSS
+  202  mkdir BOSS
+  203  cd BOSS/
+  204  ls
+  205  touch sg.sh
+  206  vi sg.sh
+  207  cat sg.sh
+  208  file sg.sh
+  209  rm sg.sh
+  210  ls
+  211  clear
+  212  history
+  213  clear
+  214  open brave
+  215  ls
+  216  mkdir dir{1..5}
+  217  ls
+  218  mkdir dir{..
+  219  lr
+  220  ls
+  221  rm dir{..
+  222  rm -r dir{..
+  223  rm -r dir{1..5}
+  224  mkdir dir{1..5}; touch {1..5}.c
+  225  ls
+  226  rm -r dir{1..5}; rm {1..5}.c
+  227  ls
+  228  clear; mkdir BDA; cd BDA
+  229  ls
+  230  pwd
+  231  cd ..
+  232  pwd
+  233  rm -r BD
+  234  rm -r BDA
+  235  pwd
+  236  ls
+  237  mkdir {CBA,BDA,CS}
+  238  ls
+  239  rm -r {CBA,BDA,CS}
+  240  ls
+  241  cd ..
+  242  pwd
+  243  ls
+  244  rm -r BOSS
+  245  LS
+  246  ls
+  247  rm zcat
+  248  shutdown
+  249  shutdown -c
+  250  man shutdown
+  251  shutdown
+  252  shutdown -c
+  253  git --version
+  254  git update-git-for-linux
+  255  git update
+  256  git update-ref
+  257  su -
+  258  man git
+  259  exit
+  260  apt-get update
+  261  apt-get install git
+  262  sudo add-apt-repository ppa:git-core/ppa -y
+  263  yum update
+  264  sudo yum update
+  265  git -v
+  266  git --version
+  267  sudo yum install git
+  268  exit
+  269  diskpart
+  270  mkdir {ESFP-2,BOSS}
+  271  exit
+  272  ls
+  273  cd 20162121023/
+  274  cd ..
+  275  cd 20162121023/BOSS/
+  276  cd ..
+  277  ls
+  278  info
+  279  ls
+  280  cd 20162121023/
+  281  cd
+  282  ls
+  283  cd 20162121023/ESFP-2/
+  284  touch test.cpp
+  285  cd 20162121023/ESFP-2/
+  286  ls
+  287  cat P1Q1.cpp
+  288  cat P1Q2.cpp
+  289  g++ P1Q2.cpp -o run
+  290  P1Q2.cpp
+  291  vi P1Q2.cpp
+  292  g++ P1Q2.cpp -o run
+  293  vi P1Q2.cpp
+  294  g++ P1Q2.cpp -o run
+  295  exit
+  296  pwd
+  297  date
+  298  clear
+  299  pwd
+  300  date +%r
+  301  clear
+  302  date +%r
+  303  clear
+  304  touch zcat
+  305  file zcat
+  306  touch zcat.txt
+  307  file zcat.txt
+  308  rm zcat.txt
+  309  clear
+  310  history
+  311  clear
+  312  vi zcat
+  313  file zcat
+  314  clear
+  315  file zcat
+  316  clear
+  317  wc zcat
+  318  vi zcat
+  319  clea
+  320  clear
+  321  wc zcat
+  322  clear
+  323  head zcat
+  324  clear
+  325  tail zcat
+  326  clear
+  327  cat zcat
+  328  clear
+  329  tail zcat
+  330  clear
+  331  history
+  332  date +%r
+  333  clear
+  334  history
+  335  clear
+  336  date +%r
+  337  lab cli-review start
+  338  g++ P1Q2.cpp -o run
+  339  vi P1Q2.cpp
+  340  g++ P1Q2.cpp -o run
+  341  ./run
+  342  g++ P1Q2.cpp -o run
+  343  vi P1Q2.cpp
+  344  g++ P1Q2.cpp -o run
+  345  vi P1Q2.cpp
+  346  tree
+  347  cd
+  348  pwd
+  349  tree
+  350  cd 20162121023/ESFP-2/
+  351  pwd
+  352  ls
+  353  clear
+  354  vi P1Q2.cpp
+  355  g++ P1Q2.cpp -o run
+  356  vi P1Q2.cpp
+  357  g++ P1Q2.cpp -o run
+  358  vi P1Q2.cpp
+  359  g++ P1Q2.cpp -o run
+  360  ./run
+  361  g++ P1Q2.cpp -o run
+  362  cd
+  363  touch temp1
+  364  chmod 640 temp1
+  365  ls -l
+  366  su -
+  367  ls
+  368  ls -l
+  369  su -
+  370  echo "temp1" > tmep1
+  371  touch Batch23.txt
+  372  chmod u+s Batch23.txt
+  373  echo "hyy" > Batch23.txt
+  374  cat Batch23.txt
+  375  ls -l Batch23.txt
+  376  chmod u+s Batch23.txt
+  377  ls -l Batch23.txt
+  378  echo "\nHello" > Batch23.txt
+  379  cat Batch23.txt
+  380  echo "Hello" > Batch23.txt
+  381  chmod g+s Batch23.txt
+  382  ls -l Batch23.txt
+  383  chmod u+s Batch23.txt
+  384  ls -l Batch23.txt
+  385  cd
+  386  mkdir p1
+  387  chmod o+t pl
+  388  ls
+  389  chmod o+t p1
+  390  ls -l pl
+  391  ls -l p1
+  392  ls -ld p1
+  393  ls -ld Videos/
+  394  umask
+  395  mkdir um
+  396  ls -ld um
+  397  touch
+  398  touch um.txt
+  399  ls -l um.txt
+  400  umask 112
+  401  umask
+  402  umask 002
+  403  umask
+  404  umask 112
+  405  touch uml.txt
+  406  mkdir uml
+  407  ls -ld uml
+  408  unmask
+  409  umask
+  410  umask 002
+  411  umask
+  412  ls -ld um
+  413  exiy
+  414  exit
+  415  cd
+  416  su -
+  417  cd
+  418  clear
+  419  man usermod
+  420  su -
+  421  cd
+  422  reset
+  423  history
+  424  su -
+  425  ps
+  426  su -
+  427  su - tech1
+  428  su -
+  429  ps aux
+  430  ps axu
+  431  reset
+  432  man history
+  433  ps aux
+  434  ps
+  435  ps aux
+  436  tau
+  437  top
+  438  bg
+  439  job
+  440  jobs
+  441  sleep 20 &
+  442  ps
+  443  ps aux
+  444  jobs
+  445  sleep 1 &
+  446  jobs
+  447  pls
+  448  ps
+  449  sleep 30 &
+  450  ps
+  451  jobs
+  452  sleep 50 &
+  453  ps aux
+  454  jobs
+  455  ps aux
+  456  ps
+  457  jobs
+  458  sleep 1000 &
+  459  sleep 1100 &
+  460  sleep 1200 &
+  461  sleep 1300 &
+  462  sleep 1400 &
+  463  sleep 1500 &
+  464  jobs
+  465  fg %1
+  466  bg
+  467  bg %1
+  468  job
+  469  jobs
+  470  sleep 1111 &
+  471  bg %1
+  472  jobs
+  473  kill 4978
+  474  killall
+  475  man killall
+  476  killall -u
+  477  term
+  478  terminatw
+  479  terminate
+  480  whoami
+  481  okahy
+  482  okay
+  483  man
+  484  1234
+  485  woman
+  486  history

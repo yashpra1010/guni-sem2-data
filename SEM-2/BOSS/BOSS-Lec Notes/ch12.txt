@@ -1,0 +1,39 @@
+======================
+                 Ch-12
+======================
+lsblk :- to see the disk partitions
+
+lsblk -fp :- will get info abt full path of device files and get UUID
+
+umount directoryname :- to remove mount point from partitions
+
+mount :- to create a mount point of partitions
+eg:- 
+1) mount UUID="358e7321-8504-478f-9b46-df3bc3265847" /mnt/freespace
+2) mount /dev/sd0 /mnt/freespace
+
+du :- for seeing file sizes of currect working directory
+du -h :- to view sizes in readable format
+
+locate :- works on pre generates database
+find :- works runtime
+
+eg:- 
+find / -name sshd_config
+
+find -user yashpra1010
+find -uid 1000
+
+find -group yashpra1010
+find -gid 1000
+
+find -perm 664
+
+find -size 29M
+find /usr/share/ -size +1M size -3M 
+
+find -mmin 150
+
+find / -type f
+
+find -type l

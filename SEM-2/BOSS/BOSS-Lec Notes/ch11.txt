@@ -1,0 +1,71 @@
+======================
+           Dt: 02/06/2021
+======================
+                 Ch-11
+-------------------------------------
+command: tar
+eg: tar -cf batch23.tar.xz file1 file2 file3
+
+======================
+operations
+======================
+-c ,--create
+-x ,--extract
+-t ,--list
+
+======================
+General options
+======================
+-v ,--verbose
+-f ,--file
+-p ,--preserve-permissions
+
+======================
+Compression operation
+======================
+-z	,.tar.gz	- less compression
+-j	,.tar.bz2	- moderate compression
+-J	,.tar.xz	- high compression
+
+======================
+QUESTION
+======================
+1. Create five blank files f1....f5
+Ans. touch f{1..5}
+
+2. Archive all the five files in file new_batch23.tar.gz
+Ans. tar -czf new_batch23.tar.gz f{1..5}
+
+3. list all the archived files of new_batch.tar.gz on terminal
+Ans. tar -tzf new_batch23.tar.gz
+
+4. Create new folder new_Batch23
+Ans. mkdir new_Batch23
+
+5. Extract the file new_batch23.tar.gz in folder new_Batch23.
+Ans. tar -xzf ~/new_batch23.tar.gz
+=============================
+
+scp f1.txt Student@localhost:/home/Student
+
+scp rootfile{1..3} yashpra1010@localhost:/home/yashpra1010
+
+scp yashpra1010@localhost:/home/yashpra1010/rootfile{1..3} student@localhost:/home/Student
+
+=============================
+command: rsync
+eg: rsync -av /etc Student@localhost:/home/Student
+
+options:
+-v	,--verbose -provides detailed output
+-a	,--archive
+
+options with a:
+____________________________________________________________
+-r	| --recursive	| sync recursively the whole directory tree
+-l	| --links		| sync symbolic links
+-p	| --perms		| preserve permissions
+-t	| --times		| preserve time stamps
+-g	| --group		| preserve group ownership
+-o	| --owner		| preserve the owner of the files
+-D	| --devices		| sync device files

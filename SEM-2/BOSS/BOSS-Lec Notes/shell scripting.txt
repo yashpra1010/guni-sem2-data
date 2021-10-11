@@ -1,0 +1,10 @@
+C Language	|Shell Scripting
+-------------------------------------------------
+printf 		|echo
+scanf 		|read
+switch case  	|case
+=============================
+STEPS: -
+1.Create new file using .sh extension or open new file and write first line as "#!/bin/sh"
+2. Assign execute permission to the file, i.e chmod a+x filename.sh
+3. For running - ./filename.sh

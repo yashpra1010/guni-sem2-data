@@ -1,0 +1,73 @@
+======================
+           Dt: 08/04/2021
+======================
+                 Ch-4
+---------------------------------------
+command -cat /etc/passwd  (to check list of users)
+---------------------------------------
+"yashpra1010:x:1000:1000:Yash Prajapati:/home/yashpra1010:bin/bash"
+|--------1-------|-2-|--3--|---4---|---------5--------|------------6-------------|-----7-----|
+
+1 - Username
+2 - User's encrypted password
+3 - UID number (user id no.)
+4 - GID number (group id no.)
+5 - Real name of user
+6 - Path of home directory for user
+7 - Shell program which shows the type of login for user
+---------------------------------------
+---------------------------------------
+command - cat /etc/group  (to check list of groups)
+---------------------------------------
+1 - Group name
+2 - Password of Group
+3 - list of users who are members of as the grp as a suplementry grp
+---------------------------------------
+---------------------------------------
+command - useradd username  (to add user)
+---------------------------------------
+---------------------------------------
+command - passwd username  (to set password)
+---------------------------------------
+---------------------------------------
+command - usermod -c "name" username (to add user's real name to the comment feild)
+---------------------------------------
+---------------------------------------
+command - usermod -g username (to specify the primary group for the user account)
+---------------------------------------
+---------------------------------------
+command - userdel username ()
+---------------------------------------
+---------------------------------------
+command - userdel -r username ()
+---------------------------------------
+---------------------------------------
+command - groupadd groupname (to add group)
+---------------------------------------
+---------------------------------------
+command - groupmod options groupname (to modify group details)
+---------------------------------------
+---------------------------------------
+command - groupdel groupname (to delete group)
+---------------------------------------
+---------------------------------------
+command - cat /etc/shadow (List of passwords/encrypted password)
+---------------------------------------
+For editing password settings - vi /etc/login.defs
+command for modification - chage
+
+yashpra1010:$6$eOUtp6X2KPy6RXET7eNsPV3yJ/:18725:0:99999:7:      :      :       
+|--------1-------|--------------------------2----------------------|---3----|4|---5---|6|--7--|--8--|--9--|
+
+1. Username of the account this password belongs to.
+2. Encrypted Password.
+3. Total number of Days since 1-1-1970 to date of password creation.
+4. Minimum limit of number of days, since last password before the user can change it again. (-m)
+5. Maximum number of days that user can access their account without changing password. (-M)
+6. Warning period of password change. (-W)
+7. Inactive period for password. (-I)
+8. Day on which your password expires.
+9. Future use (completely optional)
+
+NOTE: LAST THREE POSITIONS ARE OPTIONAL
+

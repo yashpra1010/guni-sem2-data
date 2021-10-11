@@ -1,0 +1,24 @@
+1) SISO with JK Flip Flop 
+2) EN-Enable 
+    SR-Serial ( sr0,sr1,sr2,sr3) 
+    PR-Preset R-register(r0,r1,r2,r3) 3)
+    R0 - 1 0 1 1 
+    R1 - 1 0 1 0 
+    R2 - 0 0 0 1 
+    R3 - 1 0 0 1 
+4) E-1 ,EN0,EN1,EN2,EN3--1
+    Clock 0 start 
+5) First bit of all value 
+sr0 1 
+sr1 0 
+sr2 1 
+sr3 1 
+6) Enable clock and after disable clock
+7) 1,1,0,0 enable clock & disable clock 
+    0,0,0,0 enable clock & disable clock 
+    1,1,0,1 enable clock & disable clock
+8) Output 
+SEL 00	1 0 1 1 
+SEL 01	1 0 1 0 
+SEL 10	0 0 0 1 
+SEL 11	1 0 0 1

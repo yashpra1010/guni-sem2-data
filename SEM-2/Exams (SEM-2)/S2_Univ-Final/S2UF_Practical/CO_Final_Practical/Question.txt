@@ -1,0 +1,7 @@
+To design and perform ALU circuit
+(i) Arithmetic operation of 2 number having 4 bits
+(ii) Logical operation of 2 number having 4 bits
+
+GForm link: https://forms.gle/QxoiYPd5yzXUjcjA9
+
+Format: enroll-no_name.doc/pdf
