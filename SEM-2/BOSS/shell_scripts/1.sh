@@ -1,0 +1,10 @@
+#!/bin/sh
+NAME[0]="stu1"
+NAME[1]="stu2"
+NAME[2]="stu3"
+NAME[3]="stu4"
+NAME[4]="stu5"
+echo "First Index: ${NAME[0]}"
+echo "Second Index: ${NAME[1]}"
+echo "${NAME[*]}"
+echo "${NAME[@]}"
